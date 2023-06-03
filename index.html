@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="fav.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Code Editor</title>
+  <link href="themes/default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <pre>
+      <code id="code" spellcheck="false" contenteditable="true">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &nbsp;&lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &nbsp;&lt;h1 id='headerOne'&gt;Header&lt;/h1&gt;
+  &lt;/body&gt;
+
+  &nbsp;&lt;script src='script.js'&gt;&lt;/script&gt;
+  &lt;/html&gt;
+      </code>
+    </pre>
+    <div class="output" id="output">
+    </div>
+
+  </div>
+  <img draggable="false" src="icons/play.svg" alt="" class="play" id="play" onmousedown="run()">
+  <img draggable="false" src="icons/settings.svg" alt="" class="settingsBtn" id="settingBtn" onmousedown="openSettings()">
+
+  <div id="settings" class="settings">
+    <button class="close" id="closeSettings">exit</button>
+    <br>
+    <h5>Themes:</h5>
+    <button class="themeBtn" onmousedown="changeCSS('themes/default.css', 0);"> - Default</button>
+    <button class="themeBtn" onmousedown="changeCSS('themes/light.css', 0);"> - Light</button>
+    <button class="themeBtn" onmousedown="changeCSS('themes/halloween.css', 0);"> - Halloween</button>
+    <h5 id="download" onmousedown='download("save.txt",document.querySelector("code").innerText);
+'>Download as txt. file</h5>
+  </div>
+
+  <script src="highlight.js"></script>
+</body>
+
+</html>

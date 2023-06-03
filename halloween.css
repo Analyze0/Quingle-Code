@@ -1,0 +1,155 @@
+html{
+  background:#f4be80 !important;
+}
+div{
+  color:black !important;
+}
+pre{
+  border-color:#E19A4B !important;
+  background:#E19A4B !important;
+  color:black !important;
+  overflow:scroll !important;
+  position:fixed !important;
+  left:7px !important;
+  top:7px !important;
+  width:49% !important;
+  height:92% !important;
+}
+.output{
+  background:#E19A4B !important;
+  border-color:#E19A4B !important;
+  color:black !important;
+  border-radius:5px !important;
+}
+[contenteditable] {
+  outline: 0px solid transparent !important;
+}
+.output{
+  position:fixed !important;
+  right:7px !important;
+  top:20px !important;
+  width:49% !important;
+  height:92% !important;
+  border-radius:5px !important;
+  font:default !important;
+}
+pre{
+  overflow:scroll !important;
+}
+.wrapper{
+  display: flex !important;
+}
+
+.flex-child {
+    flex: 1 !important;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px !important;
+} 
+.play{
+  z-index:1000 !important;
+  position:fixed !important;
+  left:48.2% !important;
+  height:40px !important;
+  cursor:pointer !important;
+}
+.settingsBtn{
+  cursor:pointer !important;
+  position:fixed !important;
+  top:10px !important;
+  right:10px !important;
+  width:35px !important;
+}
+.settings{
+  font-family: cursor, courier;
+  font-weight: bold;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  width:100px;
+  height:80vh;
+  padding:20px;
+  z-index: 1000;
+  background: #ededed;
+  border-radius:10px;
+  color:black;
+  opacity:80%;
+  border:1px solid white;
+  text-align:center;
+  display: none;
+  animation: fadeIn 4s;
+}
+h5{
+  color:black;
+}
+.close{
+  font-family: cursor, courier;
+  font-weight: bold;
+  border:none;
+  background:red;
+  border-radius:12px;
+  transition:1s;
+  color:white;
+}
+.close:hover{
+  width:80%;
+  background:#fd3535;
+  border-radius:12px;
+}
+@keyframes fadeIn {
+  from{
+    display:block !important;
+    opacity:0 !important;
+  }
+  to{
+    opacity:80% !important;
+  }
+}
+@keyframes fadeOut {
+  from{
+    opacity:80% !important;
+  }
+  to{
+    opacity:0 !important;
+  }
+}
+
+code{
+  color:#a2995d !important;
+  position:fixed !important;
+  left:7px !important;
+  top:7px !important;
+  width:47% !important;
+  font-family: cursor, courier !important;
+  font-weight: bold !important;
+  overflow:scroll
+}
+code .documentType{
+  color: #3f75d9 !important;
+}
+code .tagName{
+  color:#A4C47C !important;
+}
+code .default{
+  color:#E5D884 !important;
+}
+code .attributeName{
+  color:#774A85 !important;
+}
+code .attributeValue{
+  color: #482050 !important;
+}
+code .angleBrackets{
+  color: #a2995d !important;
+}
+.angleBrackets{
+  color:#a2995d !important;
+}
+.themeBtn{
+  background:none;
+  border:none;
+  color:black;
+  font-family: cursor, courier;
+  font-weight: bold;
+}

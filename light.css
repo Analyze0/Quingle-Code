@@ -1,0 +1,156 @@
+html{
+  background:white !important;
+}
+div{
+  color:black !important;
+}
+pre{
+  background:#f2f2f2 !important;
+  color:black !important;
+  overflow:scroll;
+  position:fixed !important;
+  left:7px !important;
+  top:7px !important;
+  width:49% !important;
+  height:92% !important;
+  border-radius:5px !important;
+}
+.output{
+  border:1px solid black !important;
+  background:#f2f2f2 !important;
+  color:black !important;
+  border-radius:5px !important;
+}
+[contenteditable] {
+  outline: 0px solid transparent !important;
+}
+.output{
+  position:fixed !important;
+  right:7px !important;
+  top:20px !important;
+  width:49% !important;
+  height:92% !important;
+  border:1px solid white !important;
+  border-radius:5px !important;
+  font:default !important;
+}
+pre{
+  overflow:scroll;
+}
+.wrapper{
+  display: flex !important;
+}
+
+.flex-child {
+    flex: 1 !important;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px !important;
+} 
+.play{
+  z-index:1000 !important;
+  position:fixed !important;
+  left:48.2% !important;
+  height:40px !important;
+  cursor:pointer;
+}
+.settingsBtn{
+  cursor:pointer;
+  position:fixed;
+  top:10px;
+  right:10px;
+  width:35px;
+}
+.settings{
+  font-family: cursor, courier;
+  font-weight: bold;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  width:100px;
+  height:80vh;
+  padding:20px;
+  z-index: 1000;
+  background: #ededed;
+  border-radius:10px;
+  color:black;
+  opacity:80%;
+  border:1px solid white;
+  text-align:center;
+  display: none;
+  animation: fadeIn 4s;
+}
+h5{
+  color:black;
+}
+.close{
+  font-family: cursor, courier;
+  font-weight: bold;
+  border:none;
+  background:red;
+  border-radius:12px;
+  transition:1s;
+  color:white;
+}
+.close:hover{
+  width:80%;
+  background:#fd3535;
+  border-radius:12px;
+}
+@keyframes fadeIn {
+  from{
+    display:block;
+    opacity:0;
+  }
+  to{
+    opacity:80%;
+  }
+}
+@keyframes fadeOut {
+  from{
+    opacity:80%;
+  }
+  to{
+    opacity:0;
+  }
+}
+
+code{
+  position:fixed;
+  left:7px;
+  top:7px;
+  width:47%;
+  color:black !important;
+  font-family: cursor, courier;
+  font-weight: bold;
+  overflow:scroll
+}
+code .documentType{
+  color:#3574e9;
+}
+code .tagName{
+  color:#00c89c;
+}
+code .default{
+  color:#c681d9;
+}
+code .attributeName{
+  color:#4786ff;
+}
+code .attributeValue{
+  color: #ff8359;
+}
+code .angleBrackets{
+  color:#ffffff;
+}
+.angleBrackets{
+  color:#dedede !important;
+}
+.themeBtn{
+  background:none;
+  border:none;
+  color:black;
+  font-family: cursor, courier;
+  font-weight: bold;
+}
